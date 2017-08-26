@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log("DOM fully loaded and parsed");
+  console.log("DOM fully loaded and parsed")
 
   var confirmDelete = function(event){
     if (!confirm('Are you sure you want to delete this contact?')){
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  ;[].forEach.call(document.querySelectorAll('.delete-contact'), function(link){
+  [].forEach.call(document.querySelectorAll('.delete-contact'), function(link){
     link.addEventListener("click", confirmDelete)
   })
 
@@ -38,4 +38,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   }
 
-});
+})
