@@ -11,7 +11,8 @@
 
 ## Migrations
 
-1. Create a database migration `npm run db:create:migration`
+1. Create a database migration `npm run db:migration:create`
 1. Navigate to migrations file: `/migrations/[MIGRATIONS_FILE]`
 1. Create up and down migrations functions
 1. Migrate to new migration: `npm run db:migrate`
+1. Migrate to down: `pg-migrate down`
