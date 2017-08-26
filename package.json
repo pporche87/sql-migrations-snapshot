@@ -21,6 +21,8 @@
     "pg-promise": "^6.2.1"
   },
   "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-plugin-react": "^7.3.0",
     "nodemon": "^1.11.0"
   }
 }

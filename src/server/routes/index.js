@@ -1,7 +1,7 @@
-const router = require('express').Router();
+const router = require('express').Router()
 const contacts = require('./contacts')
-const users = require('./users');
-const DbContacts = require('../../db/contacts');
+// const users = require('./users')
+const DbContacts = require('../../db/contacts')
 
 router.get('/', (request, response) => {
   DbContacts.getContacts()
@@ -9,7 +9,7 @@ router.get('/', (request, response) => {
     .catch( err => console.log('err', err) )
 })
 
-router.use('/contacts', contacts); // /contacts/search
-router.use('/users', users); // /users/search
+router.use('/contacts', contacts) // /contacts/search
+// router.use('/users', users) // /users/search
 
-module.exports = router;
+module.exports = router
